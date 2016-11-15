@@ -26,6 +26,7 @@
 (global-set-key (kbd "M-v") 'yank)
 (global-set-key (kbd "M-a") 'mark-whole-buffer)
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+(define-key isearch-mode-map "\M-f" 'isearch-repeat-forward)
 
 ;; SublimeText-like commands
 (global-set-key (kbd "M-p") 'helm-find-files)
