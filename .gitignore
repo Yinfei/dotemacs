@@ -12,7 +12,6 @@ private.el
 *.elc
 projectile-bookmarks.eld
 .cask
-Cask
 projectile.cache
 bookmarksido.last
 ido.last
