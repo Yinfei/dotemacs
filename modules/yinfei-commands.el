@@ -41,6 +41,7 @@
 (global-set-key (kbd "<M-down>") 'previous-buffer)
 (global-set-key (kbd "<M-right>") 'other-window)
 (global-set-key (kbd "<M-left>") 'previous-multiframe-window)
+(global-set-key (kbd "M-b") 'helm-buffers-list)
 
 ;; smex
 (require 'smex)
@@ -54,7 +55,7 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; Use M-t to run helm-projectile
-(global-set-key (kbd "M-t") 'helm-projectile-find-file)
+(global-set-key (kbd "M-p") 'helm-projectile-find-file)
 
 ;; Free up the option key for special characters
 (setq ns-alternate-modifier 'none)

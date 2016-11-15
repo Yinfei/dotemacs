@@ -26,6 +26,7 @@
 (load "yinfei-functions")
 (load "yinfei-behaviour")
 (load "yinfei-commands")
+(load "yinfei-magit")
 (load "yinfei-ruby")
 (load "yinfei-themes")
 

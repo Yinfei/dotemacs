@@ -46,5 +46,8 @@
 (setq auto-save-file-name-transforms
      `((".*" ,temporary-file-directory t)))
 
+(define-key minibuffer-local-map (kbd "ESC") 'kill-buffer-and-window)
+(define-key minibuffer-local-map (kbd "q") 'kill-buffer-and-window)
+
 (provide 'yinfei-behaviour)
 ;;; yinfei-behaviour.el ends here
