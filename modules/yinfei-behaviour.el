@@ -25,10 +25,9 @@
 (tool-bar-mode -1)                 ;; Hide Emacs toolbar permanently
 (scroll-bar-mode -1)               ;; Hide scollbars permanently
 (show-paren-mode 1)                ;; Always show matching parenthesis
-(delete-selection-mode t)          ;; overwrite selected area
+(delete-selection-mode 1)          ;; overwrite selected area
 (setq make-backup-files nil)       ;; Prevent temporary files
 (fset 'yes-or-no-p 'y-or-n-p)      ;; type y or n instead of yes or no
-(setq shift-selection-mode t)      ;; Allow selection with shift
 (global-linum-mode 1)              ;; Show line numbers
 (column-number-mode t)             ;; Show columns numbers
 (setq inhibit-splash-screen t)     ;; Hide welcome splash screen
