@@ -43,6 +43,5 @@
 (depends-on "rubocop")
 (depends-on "s")
 (depends-on "shut-up")
-(depends-on "smartparens")
 (depends-on "smex")
 (depends-on "with-editor")
