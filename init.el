@@ -22,6 +22,12 @@
 (require 'golden-ratio)
 (golden-ratio-mode 1)
 
+;; auto-complete
+(require 'auto-complete-config)
+(ac-config-default)
+(setq ac-ignore-case nil)
+(add-to-list 'ac-modes 'ruby-mode)
+
 (add-to-list 'load-path "~/.emacs.d/modules")
 (load "yinfei-functions")
 (load "yinfei-behaviour")
