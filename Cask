@@ -45,3 +45,4 @@
 (depends-on "shut-up")
 (depends-on "smex")
 (depends-on "with-editor")
+(depends-on "yaml-mode")
