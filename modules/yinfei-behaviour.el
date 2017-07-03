@@ -33,6 +33,9 @@
 (setq inhibit-splash-screen t)     ;; Hide welcome splash screen
 (global-auto-revert-mode 1)        ;; Auto refresh buffers
 
+;; Forces the messages to 0, and kills the *Messages* buffer - thus disabling it on startup.
+(setq-default message-log-max nil)
+(kill-buffer "*Messages*")
 
 ;; Maximize window on startup
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
