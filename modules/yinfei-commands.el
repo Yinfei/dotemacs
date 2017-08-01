@@ -26,10 +26,9 @@
 (global-set-key (kbd "M-v") 'yank)
 (global-set-key (kbd "M-a") 'mark-whole-buffer)
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
-(define-key isearch-mode-map "\M-f" 'isearch-repeat-forward)
+(global-set-key (kbd "M-f") 'swiper)
 
 ;; SublimeText-like commands
-(global-set-key (kbd "M-p") 'helm-find-files)
 (global-set-key (kbd "M-P") 'magit-status)
 (global-set-key (kbd "M-s") 'save-buffer)
 (global-set-key (kbd "M-w") 'kill-buffer)
@@ -56,7 +55,7 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; Use M-t to run helm-projectile
-(global-set-key (kbd "M-p") 'helm-projectile-find-file)
+(global-set-key (kbd "M-p") 'counsel-projectile-find-file)
 
 ;; Free up the option key for special characters
 (setq ns-alternate-modifier 'none)

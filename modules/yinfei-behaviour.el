@@ -44,7 +44,7 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; Use helm as default file finder
-(global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "C-x C-f") 'find-file)
 
 ;; Save temp file in /tmp
 (setq backup-directory-alist
