@@ -33,6 +33,7 @@
 (add-to-list 'ac-modes 'ruby-mode)
 
 (add-to-list 'load-path "~/.emacs.d/modules")
+(load-theme 'monokai t)
 (load "yinfei-themes")
 (load "yinfei-functions")
 (load "yinfei-behaviour")
