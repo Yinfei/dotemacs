@@ -20,6 +20,9 @@
 ;;; Commentary:
 ;;; Code:
 
+(require 'hlinum)
+(hlinum-activate)
+
 ;; emacs config
 (setq x-select-enable-clipboard t) ;; Enable copy and pasting from clipboard
 (tool-bar-mode -1)                 ;; Hide Emacs toolbar permanently
@@ -29,6 +32,7 @@
 (setq make-backup-files nil)       ;; Prevent temporary files
 (fset 'yes-or-no-p 'y-or-n-p)      ;; type y or n instead of yes or no
 (global-linum-mode 1)              ;; Show line numbers
+(linum-highlight-in-all-buffersp 1);; Show line numbers
 (column-number-mode t)             ;; Show columns numbers
 (setq inhibit-splash-screen t)     ;; Hide welcome splash screen
 (global-auto-revert-mode 1)        ;; Auto refresh buffers
