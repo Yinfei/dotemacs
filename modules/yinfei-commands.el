@@ -37,8 +37,8 @@
 (global-set-key (kbd "M-/") 'uncomment-region)
 
 ;; Buffers / Windows commands
-(global-set-key (kbd "<M-up>") 'next-buffer)
-(global-set-key (kbd "<M-down>") 'previous-buffer)
+(global-set-key (kbd "<M-up>") 'ivy-switch-buffer)
+(global-set-key (kbd "<M-down>") 'ivy-switch-buffer)
 (global-set-key (kbd "<M-right>") 'other-window)
 (global-set-key (kbd "<M-left>") 'previous-multiframe-window)
 (global-set-key (kbd "M-b") 'helm-buffers-list)
