@@ -23,6 +23,10 @@
 (require 'hlinum)
 (hlinum-activate)
 
+;; Nice icons
+(require 'all-the-icons)
+(all-the-icons-ivy-setup)
+
 ;; emacs config
 (setq x-select-enable-clipboard t) ;; Enable copy and pasting from clipboard
 (tool-bar-mode -1)                 ;; Hide Emacs toolbar permanently
@@ -38,7 +42,6 @@
 
 ;; Forces the messages to 0, and kills the *Messages* buffer - thus disabling it on startup.
 (setq-default message-log-max nil)
-(kill-buffer "*Messages*")
 
 ;; Maximize window on startup
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
