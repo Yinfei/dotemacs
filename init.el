@@ -26,6 +26,9 @@
 (require 'golden-ratio)
 (golden-ratio-mode 1)
 
+(require 'multi-term)
+(setq multi-term-program "/bin/bash")
+
 ;; auto-complete
 (require 'auto-complete-config)
 (ac-config-default)
@@ -40,6 +43,9 @@
 (load "yinfei-commands")
 (load "yinfei-magit")
 (load "yinfei-ruby")
+
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+(setq exec-path (append exec-path `("/usr/local/bin")))
 
 (provide 'init)
 ;;; init.el ends here
