@@ -29,6 +29,9 @@
 (require 'rspec-mode)
 (setq rspec-use-spring-when-possible nil)
 
+;;; Prevent ;agic comments
+(setq ruby-insert-encoding-magic-comment nil)
+
 ;;; FUNCTIONS (thanks http://github.com/julienXX)
 (defun ruby-open-spec-other-buffer ()
   "Switch to rspec buffer on rspec command run."
