@@ -32,6 +32,8 @@
 ;;; Prevent ;agic comments
 (setq ruby-insert-encoding-magic-comment nil)
 
+(add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
+
 ;;; FUNCTIONS (thanks http://github.com/julienXX)
 (defun ruby-open-spec-other-buffer ()
   "Switch to rspec buffer on rspec command run."

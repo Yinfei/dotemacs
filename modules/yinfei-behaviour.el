@@ -61,5 +61,9 @@
 (define-key minibuffer-local-map (kbd "ESC") 'kill-buffer-and-window)
 (define-key minibuffer-local-map (kbd "q") 'kill-buffer-and-window)
 
+;; Smartparens
+(require 'smartparens-config)
+(smartparens-global-mode t)
+
 (provide 'yinfei-behaviour)
 ;;; yinfei-behaviour.el ends here
