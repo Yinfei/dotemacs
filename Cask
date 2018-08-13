@@ -27,6 +27,7 @@
 (depends-on "flycheck")
 (depends-on "flycheck-elm")
 (depends-on "flymake-ruby")
+(depends-on "ghub")
 (depends-on "git-commit")
 (depends-on "golden-ratio")
 (depends-on "handlebars-mode")
