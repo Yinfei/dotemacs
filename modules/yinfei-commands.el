@@ -27,6 +27,7 @@
 (global-set-key (kbd "M-a") 'mark-whole-buffer)
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 (global-set-key (kbd "M-f") 'swiper)
+(global-set-key (kbd "M-F") 'counsel-ack)
 
 ;; SublimeText-like commands
 (global-set-key (kbd "M-P") 'magit-status)
