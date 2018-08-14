@@ -55,7 +55,8 @@
 ;; This the original M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
-;; Use M-t to run helm-projectile
+;; Use M-p to run counsel-projectile-find-file
+(setq projectile-keymap-prefix (kbd "C-c C-p"))
 (global-set-key (kbd "M-p") 'counsel-projectile-find-file)
 
 ;; Free up the option key for special characters
