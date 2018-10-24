@@ -35,6 +35,9 @@
 (setq ac-ignore-case nil)
 (add-to-list 'ac-modes 'ruby-mode)
 
+;; Enable dark-theme UI
+(when (eq system-type 'darwin) (ns-auto-titlebar-mode))
+
 (add-to-list 'load-path "~/.emacs.d/modules")
 (load-theme 'monokai t)
 (load "yinfei-themes")
@@ -61,7 +64,7 @@
  '(magit-use-overlays nil)
  '(package-selected-packages
    (quote
-    (smartparens multi-term dash-at-point dumb-jump counsel counsel-projectile 0blayout ivy diff-hl yaml-mode smex rubocop rspec-mode php-mode pallet multiple-cursors monokai-theme magit helm-rails helm-projectile handlebars-mode golden-ratio flymake-ruby flycheck-elm flx-ido erlang enh-ruby-mode ember-mode elm-mode elixir-mode ack-menu ac-html))))
+    (ns-auto-titlebar poly-erb selectric-mode markdown-mode nyan-mode smartparens multi-term dash-at-point dumb-jump counsel counsel-projectile 0blayout ivy diff-hl yaml-mode smex rubocop rspec-mode php-mode pallet multiple-cursors monokai-theme magit helm-rails helm-projectile handlebars-mode golden-ratio flymake-ruby flycheck-elm flx-ido erlang enh-ruby-mode ember-mode elm-mode elixir-mode ack-menu ac-html))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
