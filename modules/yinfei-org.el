@@ -26,6 +26,7 @@
 (setq org-directory "~/Dropbox/Org/")
 (setq org-agenda-files (list "~/Dropbox/Org/Agenda/Perso.org"
                              "~/Dropbox/Org/Agenda/Pro.org"
+                             "~/Dropbox/Org/Agenda/Routine.org"
                              "~/Dropbox/Org/Agenda/Birthdays.org"
                              "~/Dropbox/Org/Agenda/Holidays.org"))
 
