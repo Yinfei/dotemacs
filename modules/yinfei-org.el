@@ -26,6 +26,7 @@
 (setq org-directory "~/Dropbox/Org/")
 (setq org-agenda-files (list "~/Dropbox/Org/Agenda/Perso.org"
                              "~/Dropbox/Org/Agenda/Pro.org"
+                             "~/Dropbox/Org/Agenda/Magic.org"
                              "~/Dropbox/Org/Agenda/Routine.org"
                              "~/Dropbox/Org/Agenda/Birthdays.org"
                              "~/Dropbox/Org/Agenda/Holidays.org"))
@@ -38,6 +39,16 @@
 (setq org-adapt-indentation nil)
 
 (define-key global-map "\C-a" 'org-agenda)
+(setq org-agenda-prefix-format
+      (quote
+       ((agenda . "%-12c%?-12t% s")
+        (timeline . "% s")
+        (todo . "%-12c")
+        (tags . "%-12c")
+        (search . "%-12c"))))
+
+(setq org-agenda-deadline-leaders (quote ("!D!: " "D%2d: " "")))
+(setq org-agenda-scheduled-leaders (quote ("" "S%3d: ")))
 
 (provide 'yinfei-org)
 ;;; yinfei-org.el ends here
