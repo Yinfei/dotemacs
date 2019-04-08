@@ -38,5 +38,13 @@
         (setq end (point)))
       (goto-char (+ origin (* (length region) arg) arg)))))
 
+(defun color-org-header (tag backcolor forecolor)
+  ""
+  (interactive)
+  (goto-char (point-min))
+  (while (re-search-forward tag nil t)
+    (add-text-properties (match-beginning 0) (+ (match-beginning 0) 10)
+			 `(face (:background, backcolor, :foreground, forecolor)))))
+
 (provide 'yinfei-functions)
 ;;; yinfei-functions.el ends here

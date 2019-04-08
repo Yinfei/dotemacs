@@ -73,7 +73,7 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "#272822" :foreground "#F8F8F2" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight light :height 120 :width normal :foundry "nil" :family "Monaco"))))
  '(org-agenda-calendar-sexp ((t (:foreground "yellow" :slant normal))))
- '(org-scheduled ((t (:foreground "#A6E22E")))))
+ '(org-scheduled ((t (:foreground "white")))))
 
 (provide 'init)
 ;;; init.el ends here
