@@ -40,6 +40,8 @@
 (setq org-adapt-indentation nil)
 
 (define-key global-map "\C-a" 'org-agenda)
+(global-set-key (kbd "C-c c") 'org-capture)
+
 (setq org-agenda-prefix-format
       (quote
        ((agenda . "%-12c%?-12t% s")
