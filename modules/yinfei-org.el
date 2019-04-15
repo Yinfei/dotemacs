@@ -27,6 +27,7 @@
 (setq org-agenda-files (list "~/Dropbox/Org/Agenda/Perso.org"
                              "~/Dropbox/Org/Agenda/Google.org"
                              "~/Dropbox/Org/Agenda/Pro.org"
+                             "~/Dropbox/Org/Agenda/Stuart.org"
                              "~/Dropbox/Org/Agenda/Magic.org"
                              "~/Dropbox/Org/Agenda/Routine.org"
                              "~/Dropbox/Org/Agenda/Birthdays.org"
@@ -59,6 +60,7 @@
       (color-org-header "Perso" "#272822" "#98fb98")
       (color-org-header "Magic" "#272822" "#98fb98")
       (color-org-header "Pro" "#272822" "#b22222")
+      (color-org-header "Stuart" "#272822" "##FF0000")
       (color-org-header "Home" "#272822" "#00bfff"))))
 
 (provide 'yinfei-org)
