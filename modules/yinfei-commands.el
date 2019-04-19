@@ -25,7 +25,7 @@
 (global-set-key (kbd "M-c") 'kill-ring-save)
 (global-set-key (kbd "M-v") 'yank)
 (global-set-key (kbd "M-a") 'mark-whole-buffer)
-(global-set-key (kbd "<escape>") 'kill-buffer-and-window)
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 (global-set-key (kbd "M-f") 'swiper)
 (global-set-key (kbd "M-F") 'counsel-rg)
 
@@ -44,6 +44,10 @@
 (global-set-key (kbd "<M-left>") 'previous-multiframe-window)
 (global-set-key (kbd "M-b") 'helm-buffers-list)
 (global-set-key (kbd "M-t") 'toggle-window-split)
+(global-set-key (kbd "M-T") 'kill-buffer-and-window)
+
+;; Selection
+(global-set-key (kbd "M-r") 'er/expand-region)
 
 ;; smex
 (require 'smex)
