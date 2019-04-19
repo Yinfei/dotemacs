@@ -20,6 +20,9 @@
 ;;; Commentary:
 ;;; Code:
 
+(require 'smex)
+(smex-initialize)
+
 ;; Mac-like commands
 (global-set-key (kbd "M-z") 'undo)
 (global-set-key (kbd "M-c") 'kill-ring-save)
@@ -48,10 +51,6 @@
 
 ;; Selection
 (global-set-key (kbd "M-r") 'er/expand-region)
-
-;; smex
-(require 'smex)
-(smex-initialize)
 
 ;; smex bindings
 (global-set-key (kbd "M-x") 'smex)
