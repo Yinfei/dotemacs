@@ -43,6 +43,7 @@
 (global-set-key (kbd "<M-right>") 'other-window)
 (global-set-key (kbd "<M-left>") 'previous-multiframe-window)
 (global-set-key (kbd "M-b") 'helm-buffers-list)
+(global-set-key (kbd "M-t") 'toggle-window-split)
 
 ;; smex
 (require 'smex)
