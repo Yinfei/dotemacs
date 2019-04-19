@@ -24,14 +24,7 @@
 (require 'french-holidays)
 
 (setq org-directory "~/Dropbox/Org/")
-(setq org-agenda-files (list "~/Dropbox/Org/Agenda/Perso.org"
-                             "~/Dropbox/Org/Agenda/Google.org"
-                             "~/Dropbox/Org/Agenda/Pro.org"
-                             "~/Dropbox/Org/Agenda/Stuart.org"
-                             "~/Dropbox/Org/Agenda/Magic.org"
-                             "~/Dropbox/Org/Agenda/Routine.org"
-                             "~/Dropbox/Org/Agenda/Birthdays.org"
-                             "~/Dropbox/Org/Agenda/Holidays.org"))
+(setq org-agenda-files (file-expand-wildcards "~/Dropbox/Org/Agenda/*.org"))
 
 (setq calendar-holidays holiday-french-holidays)
 (setq org-agenda-span 14)
@@ -45,7 +38,7 @@
 
 (setq org-agenda-prefix-format
       (quote
-       ((agenda . "%-12c%?-12t% s")
+       ((agenda . "%s %-12c %(org-format-outline-path (org-get-outline-path)) %?-12t% s")
         (timeline . "% s")
         (todo . "%-12c")
         (tags . "%-12c")
