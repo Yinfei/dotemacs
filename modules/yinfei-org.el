@@ -25,7 +25,7 @@
 
 (setq org-directory "~/Dropbox/Org/")
 (setq org-agenda-files (file-expand-wildcards "~/Dropbox/Org/Agenda/*.org"))
-
+(setq org-default-notes-file (concat org-directory "/notes.org"))
 (setq calendar-holidays holiday-french-holidays)
 (setq org-agenda-span 14)
 
