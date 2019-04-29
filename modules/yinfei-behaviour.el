@@ -47,6 +47,17 @@
 ;; Maximize window on startup
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
+;; Custom welcome dashboard
+(require 'dashboard)
+(require 'dashboard-hackernews)
+(dashboard-setup-startup-hook)
+(setq dashboard-items '((agenda . 5)
+			(projects . 5)
+			(recents  . 5)
+			(hackernews . 10)))
+
+(setq show-week-agenda-p t)
+
 ;; Disable trailing whitespaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 

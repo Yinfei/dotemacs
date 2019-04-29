@@ -12,6 +12,8 @@
 (depends-on "counsel")
 (depends-on "counsel-projectile")
 (depends-on "dash")
+(depends-on "dashboard")
+(depends-on "dashboard-hackernews")
 (depends-on "diff-hl")
 (depends-on "elixir-mode")
 (depends-on "elm-mode")
