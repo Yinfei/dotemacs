@@ -51,9 +51,12 @@
 (require 'dashboard)
 (require 'dashboard-hackernews)
 (dashboard-setup-startup-hook)
+(load-file "~/Dropbox/test.el")
 (setq dashboard-items '((agenda . 5)
 			(projects . 5)
 			(recents  . 5)
+			(reddit . ("emacs" 5))
+			(reddit . ("ruby" 5))
 			(hackernews . 10)))
 
 (setq show-week-agenda-p t)
