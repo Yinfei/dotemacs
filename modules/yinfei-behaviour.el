@@ -41,6 +41,9 @@
 (global-auto-revert-mode 1)        ;; Auto refresh buffers
 (setq ac-modes '(enh-ruby-mode))
 
+(setq css-indent-level 2)
+(setq js-indent-level 2)
+
 ;; Forces the messages to 0, and kills the *Messages* buffer - thus disabling it on startup.
 (setq-default message-log-max nil)
 

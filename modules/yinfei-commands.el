@@ -31,7 +31,6 @@
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 (global-set-key (kbd "M-f") 'swiper)
 (global-set-key (kbd "M-F") 'counsel-rg)
-(define-key global-map (kbd "<S-down-mouse-1>") 'mouse-save-then-kill)
 
 ;; SublimeText-like commands
 (global-set-key (kbd "M-P") 'magit-status)
