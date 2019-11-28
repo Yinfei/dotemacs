@@ -35,7 +35,7 @@
 ;; SublimeText-like commands
 (global-set-key (kbd "M-P") 'magit-status)
 (global-set-key (kbd "M-s") 'save-buffer)
-(global-set-key (kbd "M-w") 'kill-buffer)
+(global-set-key (kbd "M-w") 'kill-current-buffer)
 (global-set-key (kbd "M-D") 'duplicate-current-line-or-region)
 (global-set-key (kbd "M-:") 'comment-region)
 (global-set-key (kbd "M-/") 'uncomment-region)
@@ -48,6 +48,9 @@
 (global-set-key (kbd "M-b") 'helm-buffers-list)
 (global-set-key (kbd "M-t") 'toggle-window-split)
 (global-set-key (kbd "M-T") 'kill-buffer-and-window)
+(global-set-key (kbd "M-1") 'delete-other-windows)
+(global-set-key (kbd "M-2") 'split-window-below)
+(global-set-key (kbd "M-3") 'split-window-right)
 
 ;; Selection
 (global-set-key (kbd "M-r") 'er/expand-region)
