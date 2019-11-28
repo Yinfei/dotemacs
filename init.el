@@ -22,6 +22,9 @@
 (flx-ido-mode 1)
 (setq ido-use-faces nil) ;; disable ido faces to see flx highlights.
 
+;; Pretty icons
+(require 'all-the-icons)
+
 ;; Golden Ratio (Resizes windows on focus)
 (require 'golden-ratio)
 (golden-ratio-mode 1)
@@ -65,7 +68,7 @@
  '(magit-use-overlays nil)
  '(package-selected-packages
    (quote
-    (feature-mode emojify slim-mode dashboard dashboard-hackernews expand-region ruby-test-mode multi-term counsel counsel-projectile 0blayout ivy diff-hl yaml-mode smex rubocop rspec-mode php-mode pallet multiple-cursors monokai-theme magit helm-rails helm-projectile handlebars-mode golden-ratio flymake-ruby flycheck-elm flx-ido erlang enh-ruby-mode ember-mode elm-mode elixir-mode ack-menu ac-html))))
+    (all-the-icons feature-mode emojify slim-mode dashboard dashboard-hackernews expand-region ruby-test-mode multi-term counsel counsel-projectile 0blayout ivy diff-hl yaml-mode smex rubocop rspec-mode php-mode pallet multiple-cursors monokai-theme magit helm-rails helm-projectile handlebars-mode golden-ratio flymake-ruby flycheck-elm flx-ido erlang enh-ruby-mode ember-mode elm-mode elixir-mode ack-menu ac-html))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
