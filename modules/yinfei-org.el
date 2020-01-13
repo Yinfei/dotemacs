@@ -33,7 +33,7 @@
 (setq org-log-done 'time)
 (setq org-adapt-indentation nil)
 
-(define-key global-map "\C-a" 'org-agenda)
+(define-key global-map (kbd "C-c a") 'org-agenda)
 (global-set-key (kbd "C-c c") 'org-capture)
 
 (setq org-agenda-prefix-format
