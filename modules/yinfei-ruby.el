@@ -20,7 +20,6 @@
 ;;; Commentary:
 ;;; Code:
 ;; Setting rbenv path
-(require 'direnv)
 (require 'rspec-mode)
 (setq ac-modes '(enh-ruby-mode))
 
@@ -29,9 +28,6 @@
 
 ;; Run Rubocop on ruby-mode use
 (add-hook 'ruby-mode-hook 'rubocop-mode)
-
-;; Run DirEnv on rspec-mode use
-(add-hook 'rspec-mode-hook 'direnv-mode)
 
 (setq rspec-use-spring-when-possible nil)
 

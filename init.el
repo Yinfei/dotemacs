@@ -45,6 +45,9 @@
 (require 'projectile)
 (setq projectile-project-search-path '("~/src/"))
 
+(require 'direnv)
+(direnv-mode)
+
 (add-to-list 'load-path "~/.emacs.d/modules")
 (add-to-list 'load-path "~/.emacs.d/modules/agenda")
 (load-theme 'monokai t)
