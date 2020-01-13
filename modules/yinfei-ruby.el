@@ -29,7 +29,9 @@
 
 ;; Run Rubocop on ruby-mode use
 (add-hook 'ruby-mode-hook 'rubocop-mode)
-(add-hook 'enh-ruby-mode-hook 'direnv-mode)
+
+;; Run DirEnv on rspec-mode use
+(add-hook 'rspec-mode-hook 'direnv-mode)
 
 (setq rspec-use-spring-when-possible nil)
 
