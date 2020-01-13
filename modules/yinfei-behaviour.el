@@ -39,7 +39,6 @@
 (column-number-mode t)             ;; Show columns numbers
 (setq inhibit-splash-screen t)     ;; Hide welcome splash screen
 (global-auto-revert-mode 1)        ;; Auto refresh buffers
-(setq ac-modes '(enh-ruby-mode))
 
 (setq css-indent-level 2)
 (setq js-indent-level 2)

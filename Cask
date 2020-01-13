@@ -14,6 +14,7 @@
 (depends-on "dash")
 (depends-on "dashboard")
 (depends-on "diff-hl")
+(depends-on "direnv")
 (depends-on "elixir-mode")
 (depends-on "elm-mode")
 (depends-on "ember-mode")

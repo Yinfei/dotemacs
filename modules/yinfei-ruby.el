@@ -20,16 +20,20 @@
 ;;; Commentary:
 ;;; Code:
 ;; Setting rbenv path
+(require 'direnv)
+(require 'rspec-mode)
+(setq ac-modes '(enh-ruby-mode))
+
 (setenv "PATH" (concat (getenv "HOME") "/.rbenv/shims:" (getenv "HOME") "/.rbenv/bin:" (getenv "PATH")))
 (setq exec-path (cons (concat (getenv "HOME") "/.rbenv/shims") (cons (concat (getenv "HOME") "/.rbenv/bin") exec-path)))
 
 ;; Run Rubocop on ruby-mode use
 (add-hook 'ruby-mode-hook 'rubocop-mode)
+(add-hook 'enh-ruby-mode-hook 'direnv-mode)
 
-(require 'rspec-mode)
 (setq rspec-use-spring-when-possible nil)
 
-;;; Prevent ;agic comments
+;;; Prevent magic comments
 (setq ruby-insert-encoding-magic-comment nil)
 
 (add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
