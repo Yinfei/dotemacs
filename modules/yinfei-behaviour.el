@@ -52,9 +52,6 @@
 
 ;; Custom welcome dashboard
 (require 'dashboard)
-(require 'dashboard-hackernews)
-(dashboard-setup-startup-hook)
-(load-file "~/Dropbox/test.el")
 (setq dashboard-items '((agenda . 5)
 			(projects . 5)
 			(recents  . 5)
