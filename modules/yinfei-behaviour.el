@@ -50,17 +50,6 @@
 ;; Maximize window on startup
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-;; Custom welcome dashboard
-(require 'dashboard)
-(setq dashboard-items '((agenda . 5)
-			(projects . 5)
-			(recents  . 5)
-			(reddit . ("emacs" 5))
-			(reddit . ("ruby" 5))
-			(hackernews . 10)))
-
-(setq show-week-agenda-p t)
-
 ;; Disable trailing whitespaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 

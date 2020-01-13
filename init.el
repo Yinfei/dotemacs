@@ -46,6 +46,7 @@
 (load-theme 'monokai t)
 (load "french-holidays")
 
+(load "yinfei-dashboard")
 (load "yinfei-functions")
 (load "yinfei-behaviour")
 (load "yinfei-commands")
