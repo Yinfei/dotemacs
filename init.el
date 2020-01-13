@@ -41,6 +41,10 @@
 ;; Enable dark-theme UI
 (when (eq system-type 'darwin) (ns-auto-titlebar-mode))
 
+;; Setup Projectile path
+(require 'projectile)
+(setq projectile-project-search-path '("~/src/"))
+
 (add-to-list 'load-path "~/.emacs.d/modules")
 (add-to-list 'load-path "~/.emacs.d/modules/agenda")
 (load-theme 'monokai t)
