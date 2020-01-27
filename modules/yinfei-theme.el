@@ -23,6 +23,9 @@
 ;; Pretty icons
 (require 'all-the-icons)
 
+;; Thin cursor
+(setq-default cursor-type 'bar)
+
 ;; Enable dark-theme UI
 (when (eq system-type 'darwin) (ns-auto-titlebar-mode))
 
