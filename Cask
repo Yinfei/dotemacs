@@ -56,6 +56,7 @@
 (depends-on "projectile")
 (depends-on "rspec-mode")
 (depends-on "rubocop")
+(depends-on "rubocopfmt")
 (depends-on "ruby-test-mode")
 (depends-on "s")
 (depends-on "shut-up")

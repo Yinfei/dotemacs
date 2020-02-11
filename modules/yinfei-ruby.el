@@ -21,13 +21,17 @@
 ;;; Code:
 ;; Setting rbenv path
 (require 'rspec-mode)
+(require 'rubocop)
 (setq ac-modes '(enh-ruby-mode))
 
 (setenv "PATH" (concat (getenv "HOME") "/.rbenv/shims:" (getenv "HOME") "/.rbenv/bin:" (getenv "PATH")))
 (setq exec-path (cons (concat (getenv "HOME") "/.rbenv/shims") (cons (concat (getenv "HOME") "/.rbenv/bin") exec-path)))
 
 ;; Run Rubocop on ruby-mode use
-(add-hook 'ruby-mode-hook 'rubocop-mode)
+(add-hook 'enh-ruby-mode-hook 'rubocop-mode)
+
+;; Run a Rubocop check on save
+(add-hook 'enh-ruby-mode-hook 'rubocopfmt-mode)
 
 (setq rspec-use-spring-when-possible nil)
 
