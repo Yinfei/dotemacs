@@ -40,7 +40,7 @@
 (setq inhibit-splash-screen t)     ;; Hide welcome splash screen
 (global-auto-revert-mode 1)        ;; Auto refresh buffers
 
-(setq css-indent-level 2)
+(setq css-indent-offset 2)
 (setq js-indent-level 2)
 
 ;; Forces the messages to 0, and kills the *Messages* buffer - thus disabling it on startup.

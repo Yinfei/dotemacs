@@ -21,7 +21,9 @@
 ;;; Code:
 
 (require 'org)
+(require 'org-superstar)
 (require 'french-holidays)
+(add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 
 (setq org-directory "~/Dropbox/Org/")
 (setq org-agenda-files (file-expand-wildcards "~/Dropbox/Org/Agenda/*.org"))
