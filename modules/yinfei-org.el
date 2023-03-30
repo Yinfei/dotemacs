@@ -25,8 +25,8 @@
 (require 'french-holidays)
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 
-(setq org-directory "~/Dropbox/Org/")
-(setq org-agenda-files (file-expand-wildcards "~/Dropbox/Org/Agenda/*.org"))
+;;(setq org-directory "~/Dropbox/Org/")
+(setq org-agenda-files (file-expand-wildcards "/Users/yohan/Library/CloudStorage/Dropbox/Org/Agenda/*.org"))
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (setq calendar-holidays holiday-french-holidays)
 (setq org-agenda-span 14)
