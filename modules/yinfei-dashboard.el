@@ -19,9 +19,6 @@
 
 ;;; Commentary:
 ;;; Code:
-(require 'dashboard)
-(dashboard-setup-startup-hook)
-
 (setq dashboard-startup-banner 'logo)
 (setq dashboard-set-file-icons t)
 (setq dashboard-set-navigator t)

@@ -20,13 +20,6 @@
 ;;; Commentary:
 ;;; Code:
 
-(require 'hlinum)
-(hlinum-activate)
-
-;; Nice icons
-(require 'all-the-icons)
-(all-the-icons-ivy-setup)
-
 ;; emacs config
 (setq x-select-enable-clipboard t) ;; Enable copy and pasting from clipboard
 (tool-bar-mode -1)                 ;; Hide Emacs toolbar permanently
@@ -63,10 +56,6 @@
 
 (define-key minibuffer-local-map (kbd "ESC") 'kill-buffer-and-window)
 (define-key minibuffer-local-map (kbd "q") 'kill-buffer-and-window)
-
-;; Smartparens
-(require 'smartparens-config)
-(smartparens-global-mode t)
 
 (provide 'yinfei-behaviour)
 ;;; yinfei-behaviour.el ends here

@@ -19,8 +19,6 @@
 
 ;;; Commentary:
 ;;; Code:
-(require 'magit)
-
 (defun magit-quit-session ()
   "Restore the previous window configuration and kill the magit buffer."
   (interactive)

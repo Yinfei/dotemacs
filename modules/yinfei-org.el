@@ -20,8 +20,6 @@
 ;;; Commentary:
 ;;; Code:
 
-(require 'org)
-(require 'org-superstar)
 (require 'french-holidays)
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 

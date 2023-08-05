@@ -20,8 +20,6 @@
 ;;; Commentary:
 ;;; Code:
 ;; Setting rbenv path
-(require 'rspec-mode)
-(require 'rubocop)
 (setq ac-modes '(enh-ruby-mode))
 
 (setenv "PATH" (concat (getenv "HOME") "/.rbenv/shims:" (getenv "HOME") "/.rbenv/bin:" (getenv "PATH")))

@@ -20,20 +20,11 @@
 ;;; Commentary:
 ;;; Code:
 
-;; Pretty icons
-(require 'all-the-icons)
-
 ;; Thin cursor
 (setq-default cursor-type 'bar)
 
 ;; Enable dark-theme UI
 (when (eq system-type 'darwin) (ns-auto-titlebar-mode))
-
-;; Custom bottom bar
-(require 'powerline)
-(powerline-default-theme)
-(add-hook 'after-init-hook 'sml/setup)
-(setq sml/theme 'respectful)
 
 (provide 'yinfei-theme)
 ;;; yinfei-theme.el ends here
